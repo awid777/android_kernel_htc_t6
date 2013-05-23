@@ -720,4 +720,9 @@ config SENSORS_LSM330_GYRO
 
 	  Say Y here if you have a device containing LSM330 chip.
 
+<<<<<<< HEAD
+=======
+	  Say Y here if you have a device containing the r3gd20 chip.
+
+>>>>>>> 0604a8e... input: mpu3050: Add HTC version of MPU3050 sensor
 source "drivers/input/misc/mpu3050/Kconfig"
