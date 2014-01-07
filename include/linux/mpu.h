@@ -209,10 +209,15 @@ struct ext_slave_descr {
 		     int (*power_LPM)(int on)
 		     );
 #else
+<<<<<<< HEAD
 		     struct ext_slave_platform_data *pdata);
 #endif
 
+=======
+>>>>>>> 8923f4a... input: mpu3050: Update HTC version of MPU3050 sensor
 		     struct ext_slave_platform_data *pdata);
+#endif
+
 	int (*exit) (void *mlsl_handle,
 		     struct ext_slave_descr *slave,
 		     struct ext_slave_platform_data *pdata);
