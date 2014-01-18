@@ -327,7 +327,12 @@ static int __devinit mpu3050_probe(struct i2c_client *client,
 	sensor->idev = idev;
 
 	mpu3050_set_power_mode(client, 1);
+<<<<<<< HEAD
 	msleep(10);
+=======
+	atomic_set(&sensor->enabled, 1);
+	hr_msleep(10);
+>>>>>>> 4b3870c... input: mpu3050: use hr_msleep for sleep
 
 	ret = i2c_smbus_read_byte_data(client, MPU3050_CHIP_ID_REG);
 	if (ret < 0) {
@@ -441,9 +446,17 @@ static int mpu3050_suspend(struct device *dev)
 static int mpu3050_resume(struct device *dev)
 {
 	struct i2c_client *client = to_i2c_client(dev);
+<<<<<<< HEAD
 
 	mpu3050_set_power_mode(client, 1);
 	msleep(100);  /* wait for gyro chip resume */
+=======
+	struct mpu3050_sensor *sensor = i2c_get_clientdata(client);
+	if (!atomic_cmpxchg(&sensor->enabled, 0, 1)) {
+		mpu3050_set_power_mode (sensor->client, 1);
+	}
+	hr_msleep(100);  /* wait for gyro chip resume */
+>>>>>>> 4b3870c... input: mpu3050: use hr_msleep for sleep
 
 	return 0;
 }
