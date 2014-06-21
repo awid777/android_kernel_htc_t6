@@ -134,4 +134,11 @@ source "drivers/staging/ramster/Kconfig"
 
 source "drivers/staging/ozwpan/Kconfig"
 
+<<<<<<< HEAD
+=======
+source "drivers/staging/prima/Kconfig"
+
+source "drivers/staging/prima_jb3.2/Kconfig"
+
+>>>>>>> 5ec4544... staging: prima: Add v3.2.3.172 Prima WLAN driver
 endif # STAGING
