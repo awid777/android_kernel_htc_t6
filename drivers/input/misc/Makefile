@@ -60,5 +60,22 @@ obj-$(CONFIG_INPUT_YEALINK)		+= yealink.o
 obj-$(CONFIG_PMIC8058_OTHC)             += pmic8058-othc.o
 obj-$(CONFIG_INPUT_PMIC8058_VIBRA_MEMLESS) += pmic8058-vib-memless.o
 obj-$(CONFIG_BOSCH_BMA150)              += bma150.o
+<<<<<<< HEAD
 obj-$(CONFIG_INPUT_DUMMY_KEYPAD)        += dummy_keypad.o
 obj-$(CONFIG_INPUT_FPC1080)             += fpc1080.o
+=======
+obj-$(CONFIG_STM_LIS3DH)		+= lis3dh_acc.o
+obj-$(CONFIG_BMP18X)			+= bmp18x-core.o
+obj-$(CONFIG_BMP18X_I2C)		+= bmp18x-i2c.o
+obj-$(CONFIG_SENSORS_AKM8963_NST)	+= akm8963_nst.o
+obj-$(CONFIG_SENSORS_AKM8963)		+= akm8963.o
+obj-$(CONFIG_SENSORS_AKM8975)		+= akm8975.o
+obj-$(CONFIG_SENSORS_PANASONIC_GYRO)	+= ewtzmu2.o
+obj-$(CONFIG_SENSORS_BMA250)		+= bma250.o
+obj-$(CONFIG_SENSORS_BMA250_BOSCH)	+= bma250_bosch.o
+obj-$(CONFIG_INPUT_CAPELLA_CM3629)	+= cm3629.o
+obj-$(CONFIG_SENSORS_R3GD20)		+= r3gd20.o
+obj-y 					+= mpu3050/
+obj-$(CONFIG_SENSORS_LSM330_ACC)	+= lsm330_acc.o
+obj-$(CONFIG_SENSORS_LSM330_GYRO)	+= lsm330_gyr.o
+>>>>>>> 83a6488... input: lsm330: Add LSM330 gyroscope/accelerometer driver
