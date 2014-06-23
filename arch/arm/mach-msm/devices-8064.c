@@ -473,6 +473,23 @@ static struct resource resources_qup_spi_gsbi1[] = {
 		.end    = APQ8064_GSBI1_QUP_IRQ,
 		.flags  = IORESOURCE_IRQ,
 	},
+<<<<<<< HEAD
+=======
+#ifdef CONFIG_FPR_SPI_DMA_GSBI1
+	{
+		.name = "spidm_channels",
+		.start = 2,
+		.end   = 3,
+		.flags = IORESOURCE_DMA,
+	},
+	{
+		.name = "spidm_crci",
+		.start = 12,
+		.end = 13,
+		.flags = IORESOURCE_DMA,
+	},
+#endif
+>>>>>>> 072af95... msm: HTC: Add support for SPI GSBI1
 };
 
 struct platform_device apq8064_device_qup_spi_gsbi1 = {
