@@ -4231,6 +4231,10 @@ static struct clk_freq_tbl clk_tbl_vpe[] = {
 	F_VPE( 96000000, pll8,  4),
 	F_VPE(100000000, pll2,  8),
 	F_VPE(160000000, pll2,  5),
+<<<<<<< HEAD
+=======
+#if defined(CONFIG_MACH_M4_UL) || defined(CONFIG_MACH_T6_UL)
+>>>>>>> 89b1b00... msm: HTC: T6: Import T6 board files
 	F_VPE(200000000, pll2,  4),
 	F_END
 };
@@ -4255,6 +4259,10 @@ static struct rcg_clk vpe_clk = {
 	.c = {
 		.dbg_name = "vpe_clk",
 		.ops = &clk_ops_rcg,
+<<<<<<< HEAD
+=======
+#if defined(CONFIG_MACH_M4_UL) || defined(CONFIG_MACH_T6_UL)
+>>>>>>> 89b1b00... msm: HTC: T6: Import T6 board files
 		VDD_DIG_FMAX_MAP2(LOW, 76800000, NOMINAL, 200000000),
 		CLK_INIT(vpe_clk.c),
 		.depends = &vpe_axi_clk.c,
@@ -4366,6 +4374,13 @@ static struct clk_freq_tbl clk_tbl_aif_osr[] = {
 	F_AIF_OSR(12288000, pll4, 4, 1,   8),
 	F_AIF_OSR(18432000, pll4, 4, 3,  16), 
 	F_AIF_OSR(24576000, pll4, 4, 1,   4),
+<<<<<<< HEAD
+=======
+#if defined(CONFIG_MACH_M7_UL) || defined(CONFIG_MACH_M4_UL) || defined(CONFIG_MACH_T6_UL)
+	F_AIF_OSR(18432000, pll4, 4, 3,  16),
+#endif
+	F_AIF_OSR(27000000, pxo,  1, 0,   0),
+>>>>>>> 89b1b00... msm: HTC: T6: Import T6 board files
 	F_END
 };
 
