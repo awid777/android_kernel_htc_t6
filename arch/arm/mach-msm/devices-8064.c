@@ -45,6 +45,10 @@
 #include <mach/msm_cache_dump.h>
 
 #define MSM_GSBI1_PHYS		0x12440000
+<<<<<<< HEAD
+=======
+#if defined(CONFIG_MACH_M7_UL) || defined(CONFIG_MACH_T6_UL)
+>>>>>>> 89b1b00... msm: HTC: T6: Import T6 board files
 #define MSM_GSBI2_PHYS		0x12480000
 #define MSM_GSBI3_PHYS		0x16200000
 #define MSM_GSBI4_PHYS		0x16300000
@@ -431,6 +435,10 @@ static struct resource resources_qup_i2c_gsbi4[] = {
 		.end	= GSBI4_QUP_IRQ,
 		.flags	= IORESOURCE_IRQ,
 	},
+<<<<<<< HEAD
+=======
+#if defined(CONFIG_MACH_M7_UL) || defined(CONFIG_MACH_T6_UL)
+>>>>>>> 89b1b00... msm: HTC: T6: Import T6 board files
 	{
 		.name	= "i2c_clk",
 		.start	= 13,
