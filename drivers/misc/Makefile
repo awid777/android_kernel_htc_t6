@@ -75,7 +75,6 @@ obj-$(CONFIG_PMIC8058_XOADC) += pmic8058-xoadc.o
 obj-$(CONFIG_PMIC8058_BATTALARM) += pmic8058-batt-alarm.o
 obj-$(CONFIG_QSEECOM) += qseecom.o
 obj-$(CONFIG_QFP_FUSE) += qfp_fuse.o
-<<<<<<< HEAD
 
 obj-$(CONFIG_CABLE_DETECT_8X60) += cable_detect.o
 obj-$(CONFIG_CABLE_DETECT_8XXX) += cable_detect_8xxx.o
@@ -83,7 +82,6 @@ obj-$(CONFIG_CABLE_DETECT_8930) += cable_detect_8930.o
 obj-y += time_helper.o
 obj-y += state_helper.o
 obj-$(CONFIG_FPR_SPI)	+=fpr/
-=======
 obj-y += tspdrv/
 obj-$(CONFIG_BU52031NVX) += pm8xxx-cradle.o
 obj-$(CONFIG_SLIMPORT_ANX7808)	+= slimport_anx7808/
@@ -94,4 +92,3 @@ obj-$(CONFIG_AMP_TFA9887)	+= tfa9887.o
 obj-$(CONFIG_AMP_TFA9887L)	+= tfa9887l.o
 obj-$(CONFIG_AMP_RT5501)	+= rt5501.o
 obj-$(CONFIG_FPR_SPI)		+= fpr/
->>>>>>> df6a788... misc: fpr: Add HTC Vadality fingerprint driver
