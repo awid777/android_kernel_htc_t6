@@ -683,12 +683,10 @@ config FPC1080_NAVIGATION
        tristate "FPC1080 fingerprint sensor navigation support"
        depends on INPUT_FPC1080
 
-<<<<<<< HEAD
 config FPC1080_MOUSE
        tristate "FPC1080 fingerprint sensor mouse support"
        depends on INPUT_FPC1080
 endif
-=======
 config R3GD20_NEW_SENSOR_TYPE
 	bool "R3GD20 New Sensor type"
 	depends on SENSORS_R3GD20
@@ -723,4 +721,3 @@ config SENSORS_LSM330_GYRO
 	  Say Y here if you have a device containing LSM330 chip.
 
 source "drivers/input/misc/mpu3050/Kconfig"
->>>>>>> 83a6488... input: lsm330: Add LSM330 gyroscope/accelerometer driver
