@@ -5181,12 +5181,9 @@ static struct clk_lookup msm_clocks_8064[] = {
 	CLK_LOOKUP("iface_clk",		gsbi6_p_clk.c,		"msm_serial_hs_brcm.0"),
 #endif 
 	CLK_LOOKUP("iface_clk",		gsbi7_p_clk.c,	"msm_serial_hsl.0"),
-<<<<<<< HEAD
 	CLK_LOOKUP("iface_clk",		gsbi7_p_clk.c,	""),
-=======
 #endif
 	CLK_LOOKUP("iface_clk",		gsbi7_p_clk.c,		"qup_i2c.7"),
->>>>>>> af1e6ba... msm: HTC: Add support for I2C GSBI7
 	CLK_LOOKUP("ref_clk",	tsif_ref_clk.c,	"msm_tspp.0"),
 	CLK_LOOKUP("iface_clk",		tsif_p_clk.c,		"msm_tspp.0"),
 	CLK_LOOKUP("tsif_pclk",		tsif_p_clk.c,		"msm_tsif.1"),
