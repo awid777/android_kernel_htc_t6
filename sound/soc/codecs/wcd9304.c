@@ -1632,11 +1632,8 @@ static int sitar_codec_enable_micbias(struct snd_soc_dapm_widget *w,
 			sitar_codec_switch_micbias(codec, 0);
 			SITAR_RELEASE_LOCK(sitar->codec_resource_lock);
 		}
-<<<<<<< HEAD
-=======
 
 #if defined(CONFIG_MACH_M4_UL) || defined(CONFIG_MACH_T6_UL)
->>>>>>> 89b1b00... msm: HTC: T6: Import T6 board files
 		snd_soc_update_bits(codec, w->reg, 0x0E, 0x0A);
 		sitar_codec_update_cfilt_usage(codec, cfilt_sel_val, 1);
 

@@ -991,12 +991,9 @@ static int msm_compr_hw_params(struct snd_pcm_substream *substream,
 	struct snd_dma_buffer *dma_buf = &substream->dma_buffer;
 	struct audio_buffer *buf;
 	int dir, ret;
-<<<<<<< HEAD
-=======
 #if defined (CONFIG_MACH_M7_UL) || defined(CONFIG_MACH_M4_UL) || defined(CONFIG_MACH_T6_UL)
 	short bit_width = 24;
 #else
->>>>>>> 89b1b00... msm: HTC: T6: Import T6 board files
 	short bit_width = 16;
 	struct snd_soc_pcm_runtime *rtd = substream->private_data;
 	char * str_name;
