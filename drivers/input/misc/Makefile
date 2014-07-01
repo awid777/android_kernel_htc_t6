@@ -74,8 +74,5 @@ obj-$(CONFIG_SENSORS_BMA250_BOSCH)	+= bma250_bosch.o
 obj-$(CONFIG_INPUT_CAPELLA_CM3629)	+= cm3629.o
 obj-$(CONFIG_SENSORS_R3GD20)		+= r3gd20.o
 obj-y 					+= mpu3050/
-<<<<<<< HEAD
 obj-$(CONFIG_SENSORS_LSM330_ACC)	+= lsm330_acc.o
 obj-$(CONFIG_SENSORS_LSM330_GYRO)	+= lsm330_gyr.o
-=======
->>>>>>> 0604a8e... input: mpu3050: Add HTC version of MPU3050 sensor
