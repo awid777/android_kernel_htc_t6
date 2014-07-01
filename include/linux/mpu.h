@@ -204,7 +204,6 @@ struct tFixPntRange {
 struct ext_slave_descr {
 	int (*init) (void *mlsl_handle,
 		     struct ext_slave_descr *slave,
-<<<<<<< HEAD
 #ifdef CONFIG_CIR_ALWAYS_READY
 		     struct ext_slave_platform_data *pdata,
 		     int (*power_LPM)(int on)
@@ -213,9 +212,7 @@ struct ext_slave_descr {
 		     struct ext_slave_platform_data *pdata);
 #endif
 
-=======
 		     struct ext_slave_platform_data *pdata);
->>>>>>> 0604a8e... input: mpu3050: Add HTC version of MPU3050 sensor
 	int (*exit) (void *mlsl_handle,
 		     struct ext_slave_descr *slave,
 		     struct ext_slave_platform_data *pdata);
