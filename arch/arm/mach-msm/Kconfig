@@ -2677,6 +2677,13 @@ config MACH_M7_DXG
         help
           Support for the HTC APQ8064 M7_DXG.
 
+config MACH_T6_UL
+        depends on ARCH_APQ8064
+        bool "APQ8064 T6_UL"
+	select FB_MSM_MIPI_DSI
+        help
+          Support for the HTC APQ8064 T6_UL.
+
 config MACH_T6_DXG
         depends on ARCH_APQ8064
         bool "APQ8064 T6_DXG"
